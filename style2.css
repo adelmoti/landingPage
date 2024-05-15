@@ -10,11 +10,11 @@
 .cabecalho
 {
 background-color: #000000;
-/*justify-content: end;*/    /*justifica os itens e separa os itens no caso joga o menu de um lado e outro*/
-display: flex; /*alinha os itens um do lado do outro*/
-align-items: center; /*alinha os itens ao centralizados*/
- 
- flex-wrap: wrap; /*flex wrap serve para autorizar em uma tela menor quebrar os itens*/
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-top: -7rem;
+
 }
 .cabecalho > img
 {
@@ -55,7 +55,7 @@ padding: 10px; /*gerou os botões para ancora no menu*/
 .secao1
 {
 
-    background-image: url(img/roda_meca.jpg);
+    background: linear-gradient(180deg, #131313 8.33%, #13131377 100%), url(img/roda.jpg);
     background-repeat: no-repeat;
     background-size: cover; 
     padding: 25rem;
@@ -64,11 +64,13 @@ padding: 10px; /*gerou os botões para ancora no menu*/
 }
 div
 {
+    
     margin-top: 8rem;
 }
 
 h1
 {
+   margin-right: 100rem;
     font-size: 5rem;
 }
 .secao1 a /*mexe na tag ancora da primeira section*/
@@ -124,8 +126,9 @@ h1
 {
     align-items: center;
     text-align: center;
-     background-color: #c01a1a;
-     color: #ffffff;
+    background-color: black;
+    color: #ffffff;
+    padding: 2rem;
     
 }
 
@@ -139,13 +142,13 @@ h1
 
 .card-container 
 {
-    
+    margin-top: 2rem;
     display: flex;
     /* justify-content: space-around; */
     /* flex-wrap: wrap; */
     gap: 20px;
     padding: 20px;
-    background-color:#000000;
+    background: linear-gradient(180deg, #131313 8.33%, #13131377 100%);
     justify-content: center;
     
 }
@@ -199,4 +202,155 @@ h1
 .cta-button:hover /* rover do agnde sua consulta*/
 {
     background-color: #0056b3;
+}
+
+#container
+{
+    background: linear-gradient(180deg, #131313 8.33%, #13131377 100%), url(); 
+     /*alinha imagem ao centro*/
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    
+}
+#container ol
+{
+    text-align: left;
+}
+
+#container li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    unicode-bidi: isolate;
+    color: white;
+}
+
+#container img /**/
+{
+    width: 25vw;
+    /* margin-top: 10rem; */
+    /* height: auto; */
+    flex-wrap: wrap;
+}
+#container h2 
+{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+#container p
+ {
+    color: white;
+    /* font-size: 17px; */
+    text-align: left;
+     margin-top: 2rem;
+    font-weight: 800; /*deixa a fonte mais larga como se fosse um BOLD mais */
+} 
+
+.subscribe
+{
+    color: white;
+    padding: 10rem;
+    text-align: center;
+    background: linear-gradient(180deg, #131313 8.33%, #13131377 100%)
+}
+.subscribe h3
+{
+font-size: 2rem;}
+
+.subscribe p
+{
+    margin-top: 1rem;
+}
+
+
+.subscribe > input
+{
+    margin-top: 1rem;
+    
+}
+
+.textBox
+{
+    width: 20rem;
+    height: 3rem;
+}
+
+.submit
+{
+    width: 10rem;
+    height: 3rem;
+}
+
+
+.rodape
+{
+background-color: #0c0c0c;
+/* padding: 1rem; */
+color: aliceblue;
+display: flex; 
+justify-content: space-between;
+align-items: center;
+
+
+
+}
+.list_rodape
+{
+display: flex; 
+
+}
+.list_rodape li
+{
+     margin-right: 20px; 
+    list-style: none;
+}
+.list_rodape li a 
+{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 20px;
+    
+}
+.div_footer
+{
+    font-size: 30px;
+    color: aliceblue;
+    /*alinha o espaçamento */
+    
+}
+
+.a_footer:hover
+{
+    
+    color: rgb(23, 86, 150);
+    border-color:black;
+    transition: 0,7s;
+}
+/*h2
+{
+text-align: center;
+margin-top: 50px;
+font-size: 50px;
+
+}*/
+.youtube
+{
+    color: red;
+}
+.twiter
+{
+    color: rgb(0, 158, 250);
+}
+.instagran
+{
+    color: rgb(250, 0, 154);
+}
+.zap
+{
+    color: rgb(6, 177, 43);
+}
+.lineOne
+{
+    margin: 0 auto;
 }
